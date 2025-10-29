@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import openai
 
 openai.api_type = "azure"
-openai.api_version = "2023-05-15" #"2022-12-01"
+openai.api_version = "2024-10-21" #"2022-12-01"
 
 app = Flask(__name__)
 
