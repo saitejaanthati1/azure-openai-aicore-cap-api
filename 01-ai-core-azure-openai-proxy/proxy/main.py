@@ -32,3 +32,8 @@ def predict_chat_completion():
         return jsonify({"error": "Malformed Payload"})
     except Exception as e:
         return jsonify({"error": str(e)})
+
+import requests
+@app.get("/whoami")
+def whoami():
+    return {"egress_ip": requests.get("https://api.ipify.org").text}
